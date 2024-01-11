@@ -2,10 +2,10 @@
 
 public class Customer
 {
-    public int CustomerID  { get; set; }
-    public string Name { get; set; }
-    public string Surname { get; set; }
-    public virtual List<Movie>? PurchasedMovies { get; set; }
-    public List<string> FavoriteGenres { get; set; }
-
+    public int CustomerId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    
+    public virtual ICollection<Purchase> Purchases { get; set; }
+    public virtual ICollection<FavoriteGenre> FavoriteGenres { get; set; }
 }

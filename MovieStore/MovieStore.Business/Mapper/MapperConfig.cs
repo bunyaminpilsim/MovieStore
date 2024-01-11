@@ -8,9 +8,8 @@ public class MapperConfig : Profile
 {
     public MapperConfig()
     {
-        CreateMap<MovieRequest, Movie>();
-        CreateMap<Movie, MovieResponse>().ForMember(dest => dest.DirectorName,
-            opt => opt.MapFrom(src => src.Director.Name + " " + src.Director.Surname));
+        CreateMap<FilmRequest, Film>();
+        CreateMap<Film, FilmResponse>();
 
         CreateMap<ActorRequest, Actor>();
         CreateMap<Actor, ActorResponse>();

@@ -2,9 +2,9 @@
 
 public class Director
 {
-    public int DirectorID { get; set; }
-    public string Name { get; set; }
-    public string Surname { get; set; }
-    
-    public virtual List<Movie>? DirectedMovies { get; set; }
+    public int DirectorId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    public virtual ICollection<Film> DirectedFilms { get; set; }
 }

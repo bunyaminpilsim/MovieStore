@@ -2,9 +2,9 @@
 
 public class Actor
 {
-    public int ActorID  { get; set; }
-    public string Name { get; set; }
-    public string Surname { get; set; }
-    
-    public virtual List<Movie>? MoviesPlayed { get; set; }
+    public int ActorId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
+    public virtual ICollection<Film> Films { get; set; }
 }
